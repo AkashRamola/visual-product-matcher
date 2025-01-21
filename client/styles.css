@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.upload-section input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-section button {
+    padding: 0.7rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section button:hover {
+    background-color: #45a049;
+}
+
+/* Preview Section */
+#image-preview-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#uploaded-image-preview img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Results Section */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#results .product {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+}
+
+#results .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    body {
+      padding: 0 5px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    input[type="file"], 
+    input[type="url"], 
+    button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    #uploaded-image-preview img, 
+    #results img {
+      max-width: 100%;
+    }
+  }
+  
+  /* Tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.7rem;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
